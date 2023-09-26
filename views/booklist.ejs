@@ -1,0 +1,64 @@
+<html>
+  <head> </head>
+  <%- include('./partials/head'); %>
+
+  <body>
+    <div class="container">
+    <table class="table table-striped">
+      <caption><p style="font-size:1.5em;">List of Books <span><a class="btn btn-warning" href="/book/add">Add New Book</a></p>
+      <thead class="bg-danger">
+          <tr>
+        <td colspan="2">
+          <form action="/books/findbyname" method="GET">
+      <input type="text" name="name" placeholder="Enter Book name" />
+      <input type="submit" class="btn btn-success" value="Search Book name" />
+    </form>
+        <td>
+        <td colspan="3">
+           <form action="/books/findbypublisher" method="GET">
+      <input type="text" name="publisher" placeholder="Enter Publisher" />
+      <input type="submit" class='btn btn-success' value="Search Publisher" />
+    </form>
+        </td>
+      </tr>
+        <tr>
+        <td>Book Name</td>
+        <td>Author</td>
+        <td>Publisher</td>
+        <td>Price</td>
+        <td>Buy Now</td>
+        <td>Delete</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i< allthebooks.length; i++) { %>
+        <tr>
+          <td><%= allthebooks[i].name %></td>
+          <td><%= allthebooks[i].author %></td>
+          <td><%= allthebooks[i].publisher %></td>
+          <td><%= allthebooks[i].price %></td>
+          <td>
+            <form action="/book/buy" method="post">
+              <input type="hidden" name="name" value="<%= allthebooks[i].name %>">
+              <input type="hidden" name="author" value="<%= allthebooks[i].author %>">
+              <input type="hidden" name="publisher" value="<%= allthebooks[i].publisher %>">
+              <input type="hidden" name="price" value="<%= allthebooks[i].price %>">
+            <button class="btn btn-warning" type="submit">Buy</button>
+            </td>
+            <td> <a class="btn btn-success delete" href="../books/delete/<%= allthebooks[i]._id%>">Delete</a> </td>
+            </form>
+          <% } %>
+        </tr>
+      </tbody>
+
+      <tfoot>
+      
+
+
+      </tfoot>
+    </table>
+   
+    
+    </div>
+  </body>
+</html>

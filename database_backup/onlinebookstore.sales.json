@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "64cf6cfe65204e3758fd279d"
+  },
+  "name": "The Hunger Games ",
+  "author": "Suzanne Collins",
+  "publisher": "Penguin",
+  "price": 60,
+  "customer": "Dilpreet Kaur",
+  "address": "Toronto",
+  "phone": "89898898989",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cf6de44a30215aad3ee7bd"
+  },
+  "name": "Python Machine Learning for Beginners",
+  "author": "Alex Campbell",
+  "publisher": "Harper Collins",
+  "price": 78,
+  "customer": "Satvir Singh",
+  "address": "Vancouver",
+  "phone": "6040-222-4444",
+  "__v": 0
+}]

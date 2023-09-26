@@ -1,0 +1,59 @@
+<html>
+  <head> </head>
+  <%- include('./partials/head'); %>
+
+  <body>
+    <table class="table table-striped">
+      <caption><p>List of Books</p>
+      <thead class="bg-danger">
+          <tr>
+        <td colspan="3">
+          <form action="/soldbooks/findbyname" method="GET">
+      <input type="text" name="name" placeholder="Enter Book name" />
+      <input type="submit" class="btn btn-success" value="Search Book name" />
+    </form>
+        <td>
+        <td colspan="3">
+           <form action="/soldbooks/findbycustomer" method="GET">
+      <input type="text" name="customer" placeholder="Enter Customer Name" />
+      <input type="submit" class='btn btn-success' value="Search Customer" />
+    </form>
+        </td>
+      </tr>
+        <tr>
+        <td>Book Name</td>
+        <td>Author</td>
+        <td>Publisher</td>
+        <td>Price</td>
+        <td>Customer Name</td>
+        <td>Address</Address>
+        <td>Phone No.</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i< allthebooks.length; i++) { %>
+        <tr>
+          <td><%= allthebooks[i].name %></td>
+          <td><%= allthebooks[i].author %></td>
+          <td><%= allthebooks[i].publisher %></td>
+          <td><%= allthebooks[i].price %></td>
+          <td><%= allthebooks[i].customer %></td>
+          <td><%= allthebooks[i].address %></td>
+          <td><%= allthebooks[i].phone %></td>
+          
+            </form>
+          <% } %>
+        </tr>
+      </tbody>
+
+      <tfoot>
+      
+
+
+      </tfoot>
+    </table>
+   
+    
+   
+  </body>
+</html>

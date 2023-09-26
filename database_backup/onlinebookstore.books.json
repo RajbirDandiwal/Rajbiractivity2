@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "64cf6a6f65204e3758fd278b"
+  },
+  "name": "The Hunger Games ",
+  "author": "Suzanne Collins",
+  "publisher": "Penguin",
+  "price": 60,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cf6a9e65204e3758fd278e"
+  },
+  "name": "Harry Potter and the Philosopher’s Stone",
+  "author": "J.K. Rowling",
+  "publisher": "Penguin",
+  "price": 100,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cf6aff65204e3758fd2791"
+  },
+  "name": "Python Machine Learning for Beginners",
+  "author": "Alex Campbell",
+  "publisher": "Harper Collins",
+  "price": 78,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cf6b7f65204e3758fd2794"
+  },
+  "name": "Intoduction to Computer Science",
+  "author": "J Smith",
+  "publisher": "MBD",
+  "price": 54,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cf6b9f65204e3758fd2797"
+  },
+  "name": "It Ends with Us",
+  "author": "Colleen Hoover",
+  "publisher": "Simon & Schuser India",
+  "price": 120,
+  "__v": 0
+}]
